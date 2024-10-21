@@ -25,8 +25,17 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
-
-
+// This function checks if an array contains digits of a valid creditcard number. It returns true if it does, and false if it doesnt. It shouldnt mutate the values of the original array.
+const validateCred = (arr) => {
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (typeof arr[i] === 'number' && arr[i] >= 0 && arr[i] <= 9) {
+      console.log(arr[i])
+    }
+    return true;
+  }
+  
+}
+console.log(validateCred(mystery5))
 
 
 
